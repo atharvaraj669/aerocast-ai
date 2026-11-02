@@ -1,0 +1,70 @@
+# =============================================================================
+# AeroCast-AI v2.0 — .gitignore
+# AI SANSAD 2026 | Team: Prompt Diplomats | Team ID: UYU672B3
+# =============================================================================
+
+# ─── Virtual Environments ─────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# ─── Python Cache & Compiled Bytecode ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+
+# ─── macOS System Files ───────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# ─── ML Pipeline Output CSVs (keep the directory, ignore generated files) ─────
+ml_pipeline/output/*.csv
+ml_pipeline/output/*.parquet
+ml_pipeline/output/models/
+
+# ─── Competition Submission Outputs (generated, not source) ───────────────────
+submission*.csv
+predictions*.csv
+
+# ─── pytest / Testing Artifacts ───────────────────────────────────────────────
+.pytest_cache/
+.cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ─── CatBoost Training Info (auto-generated verbose logs) ─────────────────────
+catboost_info/
+
+# ─── Jupyter Notebooks (if any are created locally during exploration) ─────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ─── Editor & IDE Metadata ────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── Distribution / Build Artifacts ───────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+*.egg
+
+# ─── Windows-specific ─────────────────────────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log

@@ -1,0 +1,6 @@
+# This file exists solely to ensure Git tracks the ml_pipeline/output/ directory.
+# The *.csv and models/ contents are excluded via .gitignore.
+# After cloning on a new machine, run:
+#   python3 ml_pipeline/generate_dummy_gefcom.py
+#   python3 ml_pipeline/train.py
+# to regenerate all outputs locally.
