@@ -33,6 +33,13 @@ ml_pipeline/output/models/
 # ─── Competition Submission Outputs (generated, not source) ───────────────────
 submission*.csv
 predictions*.csv
+macro_predictions.csv
+macro_renew_share_predictions.csv
+macro_country_archetypes.csv
+
+# ─── Large Raw Dataset CSVs (too large for GitHub, use Kaggle dataset instead) ─
+data/training_data.csv
+data/global-data-on-sustainable-energy.csv
 
 # ─── pytest / Testing Artifacts ───────────────────────────────────────────────
 .pytest_cache/
@@ -44,9 +51,9 @@ coverage.xml
 # ─── CatBoost Training Info (auto-generated verbose logs) ─────────────────────
 catboost_info/
 
-# ─── Jupyter Notebooks (if any are created locally during exploration) ─────────
+# ─── Jupyter Notebooks (keep kaggle_aerocast_macro.ipynb, ignore checkpoints) ─
 .ipynb_checkpoints/
-*.ipynb
+# *.ipynb   <-- intentionally NOT ignoring .ipynb so Kaggle notebook is tracked
 
 # ─── Editor & IDE Metadata ────────────────────────────────────────────────────
 .vscode/
